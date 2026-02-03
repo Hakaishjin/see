@@ -1,0 +1,238 @@
+/* ═══════════════════════════════════════════════════════════
+   BARCELONA TRIP — script.js
+   ✏️  All editable data lives at the TOP of this file.
+       Each person can own a section — just change the arrays.
+   ═══════════════════════════════════════════════════════════ */
+
+// ─── 1. ITINERARY DATA ──────────────────────────────────────
+// ✏️ EDIT: Fill in real activities, times, and dates.
+//    Each day has: { title, emoji, date, activities: [{time, text}] }
+const days = [
+  {
+    title: "Arrival Day",
+    emoji: "✈️",
+    date: "July 10",
+    activities: [
+      { time: "AM",    text: "<strong>Travel</strong> — Train / flight to Barcelona" },
+      { time: "~14:00", text: "<strong>Hotel check-in</strong> — Drop off luggage, freshen up" },
+      { time: "~16:00", text: "<strong>Walk around</strong> — Explore the neighbourhood, find a supermarket" },
+      { time: "~19:00", text: "<strong>Dinner</strong> — TBD (local restaurant?)" }
+    ]
+  },
+  {
+    title: "La Sagrada Família",
+    emoji: "⛪",
+    date: "July 11",
+    activities: [
+      { time: "09:00", text: "<strong>Breakfast</strong> — Hotel or nearby café" },
+      { time: "10:30", text: "<strong>Sagrada Família</strong> — Pre-booked guided tour (⏱ ~1.5 h)" },
+      { time: "13:00", text: "<strong>Lunch</strong> — Restaurant near Eixample" },
+      { time: "15:30", text: "<strong>Free time</strong> — Explore Eixample or rest" },
+      { time: "19:00", text: "<strong>Dinner</strong> — TBD" }
+    ]
+  },
+  {
+    title: "Park Güell & Gràcia",
+    emoji: "🌳",
+    date: "July 12",
+    activities: [
+      { time: "09:00", text: "<strong>Breakfast</strong> — Hotel" },
+      { time: "10:00", text: "<strong>Park Güell</strong> — Monumental zone (book tickets ahead!)" },
+      { time: "13:00", text: "<strong>Lunch</strong> — Neighbourhood of Gràcia" },
+      { time: "15:00", text: "<strong>Gràcia</strong> — Wander the plazas & local shops" },
+      { time: "18:30", text: "<strong>Dinner</strong> — TBD" }
+    ]
+  },
+  {
+    title: "Gothic Quarter",
+    emoji: "🏰",
+    date: "July 13",
+    activities: [
+      { time: "09:30", text: "<strong>Breakfast</strong> — Café in the Gothic Quarter" },
+      { time: "10:30", text: "<strong>Gothic Quarter</strong> — Cathedral, narrow streets, Picasso Museum" },
+      { time: "13:30", text: "<strong>Lunch</strong> — La Boqueria market area" },
+      { time: "15:30", text: "<strong>La Boqueria</strong> — Browse the famous market stalls" },
+      { time: "18:00", text: "<strong>Dinner</strong> — TBD" }
+    ]
+  },
+  {
+    title: "Beach Day",
+    emoji: "🏖️",
+    date: "July 14",
+    activities: [
+      { time: "09:00", text: "<strong>Breakfast</strong> — Hotel" },
+      { time: "10:00", text: "<strong>Barceloneta Beach</strong> — Sun, swim, relax" },
+      { time: "13:00", text: "<strong>Lunch</strong> — Seafood restaurant near the beach" },
+      { time: "16:00", text: "<strong>Free time</strong> — Beach or nearby shops" },
+      { time: "19:30", text: "<strong>Dinner</strong> — TBD" }
+    ]
+  },
+  {
+    title: "Montjuïc",
+    emoji: "⛰️",
+    date: "July 15",
+    activities: [
+      { time: "09:00", text: "<strong>Breakfast</strong> — Hotel" },
+      { time: "10:00", text: "<strong>Cable car</strong> — Up to Montjuïc" },
+      { time: "11:00", text: "<strong>Montjuïc</strong> — Gardens, Poble Sec, Fundació Joan Miró" },
+      { time: "14:00", text: "<strong>Lunch</strong> — Restaurant on the hill" },
+      { time: "16:30", text: "<strong>Free time</strong> — Stay on hill or head back down" },
+      { time: "19:00", text: "<strong>Dinner</strong> — TBD" }
+    ]
+  },
+  {
+    title: "Last Day & Departure",
+    emoji: "👋",
+    date: "July 17",
+    activities: [
+      { time: "09:00", text: "<strong>Breakfast</strong> — Hotel (last one!)" },
+      { time: "10:00", text: "<strong>Free time</strong> — Last-minute souvenirs, revisit a favourite spot" },
+      { time: "12:00", text: "<strong>Lunch</strong> — TBD" },
+      { time: "TBD",   text: "<strong>Check-out & Travel home</strong> — Train / flight back" }
+    ]
+  }
+];
+
+// ─── 2. MAP PINS ────────────────────────────────────────────
+// ✏️ EDIT: Add real coordinates & descriptions.
+//    type: "hotel" | "activity" | "transport"
+const mapPins = [
+  { lat: 41.3851, lng: 2.1734, type: "hotel",      label: "Hotel (TBD)", desc: "Your hotel — update address here" },
+  { lat: 41.4033, lng: 2.1741, type: "activity",   label: "Sagrada Família", desc: "Iconic basilica by Gaudí" },
+  { lat: 41.3851, lng: 2.1734, type: "activity",   label: "Park Güell",       desc: "Monumental zone & gardens" },
+  { lat: 41.3851, lng: 2.1734, type: "activity",   label: "Gothic Quarter",   desc: "Cathedral & winding streets" },
+  { lat: 41.3851, lng: 2.1734, type: "activity",   label: "La Boqueria",      desc: "Famous food market" },
+  { lat: 41.3851, lng: 2.1734, type: "activity",   label: "Barceloneta",      desc: "Main city beach" },
+  { lat: 41.3851, lng: 2.1734, type: "activity",   label: "Montjuïc",         desc: "Hill with gardens & museums" },
+  { lat: 41.3851, lng: 2.1734, type: "transport",  label: "Barcelona Sants",  desc: "Main train station" }
+];
+
+// ─── 3. CREDITS / CREW ──────────────────────────────────────
+// ✏️ EDIT: Add your real names, roles, and emojis!
+const crew = [
+  { name: "Person 1",  emoji: "🌟", role: "Trip Leader",     bio: "Organised the itinerary & logistics" },
+  { name: "Person 2",  emoji: "🎨", role: "Design & Code",   bio: "Built the website & chose the vibe" },
+  { name: "Person 3",  emoji: "📍", role: "Maps & Research", bio: "Found the best spots & transport" }
+];
+
+
+/* ═══════════════════════════════════════════════════════════
+   APP LOGIC — you generally don't need to edit below here
+   ═══════════════════════════════════════════════════════════ */
+
+// ─── ITINERARY ACCORDION ─────────────────────────────────
+function renderDays() {
+  const grid = document.getElementById('daysGrid');
+  days.forEach((day, i) => {
+    const card = document.createElement('div');
+    card.className = 'day-card';
+    card.innerHTML = `
+      <div class="day-header" onclick="toggleDay(${i})">
+        <div class="day-number">${day.emoji}</div>
+        <div class="day-title-wrap">
+          <div class="day-title">Day ${i + 1} — ${day.title}</div>
+          <div class="day-date">${day.date}</div>
+        </div>
+        <div class="day-arrow">▼</div>
+      </div>
+      <div class="day-body">
+        <div class="day-body-inner">
+          <ul class="activity-list">
+            ${day.activities.map(a => `<li><span class="time">${a.time}</span><span class="desc">${a.text}</span></li>`).join('')}
+          </ul>
+        </div>
+      </div>`;
+    grid.appendChild(card);
+  });
+}
+
+function toggleDay(index) {
+  const cards = document.querySelectorAll('.day-card');
+  cards.forEach((c, i) => { if (i !== index) c.classList.remove('open'); });
+  cards[index].classList.toggle('open');
+}
+
+// ─── MAP (LEAFLET) ───────────────────────────────────────
+function initMap() {
+  // Centre on Barcelona
+  const map = L.map('mapContainer', { center: [41.3874, 2.1686], zoom: 13 });
+
+  // Tile layer (free, no API key needed)
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
+  }).addTo(map);
+
+  // Colour per type
+  const colours = { hotel: '#F0C040', activity: '#A855F7', transport: '#60A5FA' };
+
+  mapPins.forEach(pin => {
+    // Custom circle marker
+    const marker = L.circleMarker([pin.lat, pin.lng], {
+      radius: 9,
+      color: colours[pin.type],
+      fillColor: colours[pin.type],
+      fillOpacity: 0.85,
+      weight: 3,
+      opacity: 1
+    }).addTo(map);
+
+    marker.bindPopup(`<strong style="color:#A855F7">${pin.label}</strong><br><span style="font-size:.85rem;color:#aaa">${pin.desc}</span>`, {
+      maxWidth: 200
+    });
+  });
+}
+
+// ─── NAVBAR SCROLL EFFECT ────────────────────────────────
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// ─── MOBILE MENU ─────────────────────────────────────────
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+// ─── PWA INSTALL PROMPT ──────────────────────────────────
+let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('installBanner').classList.remove('hidden');
+});
+
+document.getElementById('installBtn').addEventListener('click', async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') {
+      document.getElementById('installBanner').classList.add('hidden');
+    }
+    deferredPrompt = null;
+  }
+});
+
+// ─── CREDITS ─────────────────────────────────────────────
+function renderCredits() {
+  const grid = document.getElementById('creditsGrid');
+  crew.forEach(person => {
+    const card = document.createElement('div');
+    card.className = 'credit-card';
+    card.innerHTML = `
+      <div class="credit-avatar">${person.emoji}</div>
+      <h3>${person.name}</h3>
+      <div class="role">${person.role}</div>
+      <p>${person.bio}</p>`;
+    grid.appendChild(card);
+  });
+}
+
+// ─── INIT ────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  renderDays();
+  renderCredits();
+  initMap();
+});

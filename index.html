@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6B21A8" />
+  <meta name="description" content="Our school trip to Barcelona — 7 days of adventure." />
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <title>Barcelona Trip 🇪🇸</title>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">BCN <span>2025</span></a>
+    <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#itinerary" onclick="closeMenu()">Itinerary</a></li>
+      <li><a href="#map"       onclick="closeMenu()">Map</a></li>
+      <li><a href="#transport" onclick="closeMenu()">Transport</a></li>
+      <li><a href="#hotel"     onclick="closeMenu()">Hotel</a></li>
+      <li><a href="#credits"   onclick="closeMenu()">Credits</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-label">School Trip</p>
+    <h1>Barcelona</h1>
+    <!-- ✏️ EDIT: Change the dates below -->
+    <p class="hero-dates">July 10 – July 17, 2025</p>
+    <p class="hero-sub">7 days · 3 explorers · 1 city</p>
+    <a href="#itinerary" class="btn-hero">Explore the Trip</a>
+  </div>
+  <div class="hero-scroll-hint">▼</div>
+</section>
+
+<!-- ─── ITINERARY ─── -->
+<section id="itinerary">
+  <div class="section-header">
+    <h2>Day-by-Day</h2>
+    <p>Click a day to expand details</p>
+  </div>
+
+  <div class="days-grid" id="daysGrid">
+    <!-- Days are injected by JS from data in script.js — see the `days` array -->
+  </div>
+</section>
+
+<!-- ─── MAP ─── -->
+<section id="map">
+  <div class="section-header">
+    <h2>Map</h2>
+    <p>All locations marked — click a pin for details</p>
+  </div>
+  <div class="map-wrapper">
+    <div id="mapContainer"></div>
+    <!-- Legend -->
+    <div class="map-legend">
+      <div class="legend-item"><span class="dot dot-hotel"></span> Hotel</div>
+      <div class="legend-item"><span class="dot dot-activity"></span> Activity</div>
+      <div class="legend-item"><span class="dot dot-transport"></span> Transport</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TRANSPORT ─── -->
+<section id="transport">
+  <div class="section-header">
+    <h2>Transport & Schedules</h2>
+    <p>Trains, metro & buses</p>
+  </div>
+
+  <div class="transport-grid">
+    <!-- ✏️ EDIT: Fill in real schedule info in script.js → `transportData` -->
+    <div class="transport-card">
+      <div class="transport-icon">🚆</div>
+      <h3>Arrival Train</h3>
+      <table class="schedule-table">
+        <tr><td>Route</td><td class="val">— → Barcelona Sants</td></tr>
+        <tr><td>Date</td><td class="val">July 10</td></tr>
+        <tr><td>Depart</td><td class="val">TBD</td></tr>
+        <tr><td>Arrive</td><td class="val">TBD</td></tr>
+        <tr><td>Ticket</td><td class="val">TBD</td></tr>
+      </table>
+    </div>
+
+    <div class="transport-card">
+      <div class="transport-icon">🚆</div>
+      <h3>Return Train</h3>
+      <table class="schedule-table">
+        <tr><td>Route</td><td class="val">Barcelona Sants → —</td></tr>
+        <tr><td>Date</td><td class="val">July 17</td></tr>
+        <tr><td>Depart</td><td class="val">TBD</td></tr>
+        <tr><td>Arrive</td><td class="val">TBD</td></tr>
+        <tr><td>Ticket</td><td class="val">TBD</td></tr>
+      </table>
+    </div>
+
+    <div class="transport-card">
+      <div class="transport-icon">🚇</div>
+      <h3>Barcelona Metro</h3>
+      <table class="schedule-table">
+        <tr><td>T-Casual</td><td class="val">10-trip card — buy at airport</td></tr>
+        <tr><td>Hours</td><td class="val">05:00 – 00:00 (Sun earlier)</td></tr>
+        <tr><td>Frequency</td><td class="val">Every 3–5 min (peak)</td></tr>
+        <tr><td>Tip</td><td class="val">Download TMB app</td></tr>
+      </table>
+    </div>
+
+    <div class="transport-card">
+      <div class="transport-icon">🚌</div>
+      <h3>Local Buses</h3>
+      <table class="schedule-table">
+        <tr><td>Payment</td><td class="val">T-Casual card or contactless</td></tr>
+        <tr><td>Tip</td><td class="val">Check TMB app for live times</td></tr>
+        <tr><td>Night buses</td><td class="val">Available on key routes</td></tr>
+        <tr><td>Airport</td><td class="val">AeroBus or Bus 46</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HOTEL ─── -->
+<section id="hotel">
+  <div class="section-header">
+    <h2>Hotel</h2>
+  </div>
+  <div class="hotel-card">
+    <!-- ✏️ EDIT: Replace everything inside .hotel-details with real info -->
+    <div class="hotel-image-placeholder">
+      <span>📷 Hotel photo here</span>
+    </div>
+    <div class="hotel-details">
+      <h3 class="hotel-name">Hotel Name TBD</h3>
+      <p class="hotel-address">📍 Street address, Barcelona</p>
+      <p class="hotel-stars">⭐⭐⭐ — Star rating TBD</p>
+      <div class="hotel-info-grid">
+        <div><strong>Check-in</strong><span>TBD</span></div>
+        <div><strong>Check-out</strong><span>TBD</span></div>
+        <div><strong>Rooms</strong><span>TBD</span></div>
+        <div><strong>Breakfast</strong><span>TBD</span></div>
+        <div><strong>Price/night</strong><span>TBD</span></div>
+        <div><strong>Nearest metro</strong><span>TBD</span></div>
+      </div>
+      <p class="hotel-note">✏️ Add extra notes about the hotel here (e.g. pool, rules, nearby shops).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CREDITS ─── -->
+<section id="credits">
+  <div class="section-header">
+    <h2>The Crew</h2>
+    <p>People who made this trip & site happen</p>
+  </div>
+  <div class="credits-grid" id="creditsGrid">
+    <!-- Injected by JS — edit the `crew` array in script.js -->
+  </div>
+  <p class="credits-footer">© 2025 Barcelona Trip Team — Made with 💜 and way too much Google Maps</p>
+</section>
+
+<!-- ─── INSTALL BANNER (PWA) ─── -->
+<div id="installBanner" class="install-banner hidden">
+  <p>📱 Add this to your home screen for offline access!</p>
+  <button id="installBtn" class="btn-install">Install</button>
+  <button class="btn-dismiss" onclick="document.getElementById('installBanner').classList.add('hidden')">✕</button>
+</div>
+
+<!-- ─── SCRIPTS ─── -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+<!-- Register Service Worker for PWA -->
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then(() => {
+      console.log('[PWA] Service worker registered.');
+    });
+  }
+</script>
+</body>
+</html>
