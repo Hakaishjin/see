@@ -24,7 +24,7 @@ const days = [
       { time: "'s morgens", text: "<strong>Pont du Gard</strong> — Kijken naar een brug en ontbijten" },
       { time: "'s middags", text: "<strong>Arena van Nîmes</strong> — Amfitheater bekijken + Lunch" },
       { time: "Tijd niet bekend", text: "<strong>Busrit</strong> — Naar Santa Susanna (bijna in Barcelona)" },
-      { time: "Avond", text: "<strong>Avondwandeling</strong> — Wandeling in de avond" },
+      { time: "Avond", text: "<strong>Avondwandeling</strong> — Wandeling in de avond" }
     ]
   },
   {
