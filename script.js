@@ -19,7 +19,7 @@ const days = [
   {
     title: "Frankrijk en aankomst hotel",
     emoji: "🇫🇷",
-    date: "28 Maart,
+    date: "28 Maart",
     activities: [
       { time: "'s morgens", text: "<strong>Pont du Gard</strong> — Kijken naar een brug en ontbijten" },
       { time: "'s middags", text: "<strong>Arena van Nîmes</strong> — Amfitheater bekijken + Lunch" },
