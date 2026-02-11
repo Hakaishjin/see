@@ -13,7 +13,7 @@ const days = [
     emoji: "🚌",
     date: "27 Maart",
     activities: [
-      { time: "~19:30",    text: "<strong>Vertrek</strong> — (⏱ ~13 uur) busrit naar Pont du Gard, Frankrijk" },
+      { time: "~19:30",    text: "<strong>Vertrek</strong> — (⏱ ~13 uur) busrit naar Pont du Gard, Frankrijk" }
     ]
   },
   {
