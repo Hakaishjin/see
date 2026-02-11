@@ -13,27 +13,26 @@ const days = [
     emoji: "🚌",
     date: "27 Maart",
     activities: [
-      { time: "~19:30",    text: "<strong>Vertrek</strong> — 13 uur busrit naar Pont du Gard, Frankrijk" },
+      { time: "~19:30",    text: "<strong>Vertrek</strong> — (⏱ ~13 uur) busrit naar Pont du Gard, Frankrijk" },
     ]
   },
   {
-    title: "La Sagrada Família",
-    emoji: "⛪",
-    date: "July 11",
+    title: "Frankrijk en aankomst hotel",
+    emoji: "🇫🇷",
+    date: "28 Maart,
     activities: [
-      { time: "09:00", text: "<strong>Breakfast</strong> — Hotel or nearby café" },
-      { time: "10:30", text: "<strong>Sagrada Família</strong> — Pre-booked guided tour (⏱ ~1.5 h)" },
-      { time: "13:00", text: "<strong>Lunch</strong> — Restaurant near Eixample" },
-      { time: "15:30", text: "<strong>Free time</strong> — Explore Eixample or rest" },
-      { time: "19:00", text: "<strong>Dinner</strong> — TBD" }
+      { time: "'s morgens", text: "<strong>Pont du Gard</strong> — Kijken naar een brug en ontbijten" },
+      { time: "'s middags", text: "<strong>Arena van Nîmes</strong> — Amfitheater bekijken + Lunch" },
+      { time: "Tijd niet bekend", text: "<strong>Busrit</strong> — Naar Santa Susanna (bijna in Barcelona)" },
+      { time: "Avond", text: "<strong>Avondwandeling</strong> — Wandeling in de avond" },
     ]
   },
   {
-    title: "Park Güell & Gràcia",
-    emoji: "🌳",
+    title: "Titel ontbreekt",
+    emoji: "😭",
     date: "July 12",
     activities: [
-      { time: "09:00", text: "<strong>Breakfast</strong> — Hotel" },
+      { time: "Tijd niet bekend", text: "<strong>Aankomst in hotel</strong> — Hotel" },
       { time: "10:00", text: "<strong>Park Güell</strong> — Monumental zone (book tickets ahead!)" },
       { time: "13:00", text: "<strong>Lunch</strong> — Neighbourhood of Gràcia" },
       { time: "15:00", text: "<strong>Gràcia</strong> — Wander the plazas & local shops" },
