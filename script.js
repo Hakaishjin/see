@@ -9,14 +9,11 @@
 //    Each day has: { title, emoji, date, activities: [{time, text}] }
 const days = [
   {
-    title: "Arrival Day",
-    emoji: "✈️",
-    date: "July 10",
+    title: "Vertrek",
+    emoji: "🚌",
+    date: "27 Maart",
     activities: [
-      { time: "AM",    text: "<strong>Travel</strong> — Train / flight to Barcelona" },
-      { time: "~14:00", text: "<strong>Hotel check-in</strong> — Drop off luggage, freshen up" },
-      { time: "~16:00", text: "<strong>Walk around</strong> — Explore the neighbourhood, find a supermarket" },
-      { time: "~19:00", text: "<strong>Dinner</strong> — TBD (local restaurant?)" }
+      { time: "~19:30",    text: "<strong>Vertrek</strong> — 13 uur busrit naar Pont du Gard, Frankrijk" },
     ]
   },
   {
