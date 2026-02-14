@@ -63,7 +63,7 @@ const days = [
     emoji: "🐸",
     date: "1 april",
     activities: [
-      { time: "Heel de dag?", text: "<strong>Girona</strong> — Grote wandeling. Ja dat is alles op deze dag. Neen het is geen 1 april grap. Ik hoop van wel want wth is dit :sob:" }
+      { time: "Heel de dag?", text: "<strong>Girona</strong> — Grote wandeling. Ja dat is alles op deze dag. Neen het is geen 1 april grap. Ik hoop van wel, want wth is dit :sob:" }
   },
   {
     title: "Geen tijd",
