@@ -126,7 +126,7 @@ function renderDays() {
       <div class="day-header" onclick="toggleDay(${i})">
         <div class="day-number">${day.emoji}</div>
         <div class="day-title-wrap">
-          <div class="day-title">Day ${i + 1} — ${day.title}</div>
+          <div class="day-title">Dag ${i + 1} — ${day.title}</div>
           <div class="day-date">${day.date}</div>
         </div>
         <div class="day-arrow">▼</div>
