@@ -77,14 +77,6 @@ const days = [
       { time: "Ochtend", text: "<strong>Avondmaal</strong> — Haha 1 april het is eigenlijk in de avond." },
       { time: "Er was is in een ver land in een vergeten tijd...", text: "<strong>Terugrijs</strong> — terug naar herentals"}
     ]
-  },
-  {
-    title: "Het einde",
-    emoji: "👋",
-    date: "3 april",
-    activities: [
-      { time: "?", text: "<strong>Aankomst Herentals</strong> — Het einde van het verhaal"}
-    ]
   }
 ];
 
