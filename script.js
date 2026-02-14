@@ -86,7 +86,6 @@ const days = [
       { time: "?", text: "<strong>Aankomst Herentals</strong> — Het einde van het verhaal"}
     ]
   }
-  }
 ];
 
 // ─── 2. MAP PINS ────────────────────────────────────────────
