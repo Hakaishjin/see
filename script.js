@@ -11,7 +11,7 @@ const days = [
   {
     title: "Vertrek",
     emoji: "🚌",
-    date: "27 Maart",
+    date: "27 maart",
     activities: [
       { time: "~19:30",    text: "<strong>Vertrek</strong> — (⏱ ~13 uur) busrit naar Pont du Gard, Frankrijk" }
     ]
@@ -19,7 +19,7 @@ const days = [
   {
     title: "Frankrijk en aankomst hotel",
     emoji: "🇫🇷",
-    date: "28 Maart",
+    date: "28 maart",
     activities: [
       { time: "'s morgens", text: "<strong>Pont du Gard</strong> — Kijken naar een brug en ontbijten" },
       { time: "'s middags", text: "<strong>Arena van Nîmes</strong> — Amfitheater bekijken + Lunch" },
@@ -30,62 +30,62 @@ const days = [
   {
     title: "Titel ontbreekt",
     emoji: "😭",
-    date: "July 12",
+    date: "29 maart",
     activities: [
-      { time: "Tijd niet bekend", text: "<strong>Aankomst in hotel</strong> — Hotel" },
-      { time: "10:00", text: "<strong>Park Güell</strong> — Monumental zone (book tickets ahead!)" },
-      { time: "13:00", text: "<strong>Lunch</strong> — Neighbourhood of Gràcia" },
-      { time: "15:00", text: "<strong>Gràcia</strong> — Wander the plazas & local shops" },
-      { time: "18:30", text: "<strong>Dinner</strong> — TBD" }
+      { time: "Tijd niet bekend", text: "<strong>Aankomst in hotel?</strong> — Hotel??" },
+      { time: "NVT", text: "<strong>Hospital San Pau</strong> — " },
+      { time: "NVT", text: "<strong>Street art tour</strong> — Neighbourhood of Gràcia" },
+      { time: "avond", text: "<strong>Diner</strong> — Tapas eten (restaurant Plâza Espagña" }
     ]
   },
   {
-    title: "Gothic Quarter",
+    title: "Gaudí-dag",
     emoji: "🏰",
-    date: "July 13",
+    date: "30 maart",
     activities: [
-      { time: "09:30", text: "<strong>Breakfast</strong> — Café in the Gothic Quarter" },
-      { time: "10:30", text: "<strong>Gothic Quarter</strong> — Cathedral, narrow streets, Picasso Museum" },
-      { time: "13:30", text: "<strong>Lunch</strong> — La Boqueria market area" },
-      { time: "15:30", text: "<strong>La Boqueria</strong> — Browse the famous market stalls" },
-      { time: "18:00", text: "<strong>Dinner</strong> — TBD" }
+      { time: "Voormiddag", text: "<strong>Sagrada Familia</strong> — Café in the Gothic Quarter" },
+      { time: "Voormiddag", text: "<strong>Wandeling</strong> — Cassa Batló en Casa Mila" },
+      { time: "Namidag", text: "<strong>Park Guëll</strong> — " }
     ]
   },
   {
-    title: "Beach Day",
+    title: "Geen titel",
     emoji: "🏖️",
-    date: "July 14",
+    date: "31 maart",
     activities: [
-      { time: "09:00", text: "<strong>Breakfast</strong> — Hotel" },
-      { time: "10:00", text: "<strong>Barceloneta Beach</strong> — Sun, swim, relax" },
-      { time: "13:00", text: "<strong>Lunch</strong> — Seafood restaurant near the beach" },
-      { time: "16:00", text: "<strong>Free time</strong> — Beach or nearby shops" },
-      { time: "19:30", text: "<strong>Dinner</strong> — TBD" }
+      { time: "Voormiddag", text: "<strong>Keuze-activiteit</strong> — Camp Nou, Escape game of alternatief programma" },
+      { time: "Namiddag", text: "<strong>Codorníu</strong> —" },
+      { time: "Avond", text: "<strong>Quiz</strong> — Ja ik weet het: klinkt saai." }
     ]
   },
   {
-    title: "Montjuïc",
-    emoji: "⛰️",
-    date: "July 15",
+    title: "1 april",
+    emoji: "🐸",
+    date: "1 april",
     activities: [
-      { time: "09:00", text: "<strong>Breakfast</strong> — Hotel" },
-      { time: "10:00", text: "<strong>Cable car</strong> — Up to Montjuïc" },
-      { time: "11:00", text: "<strong>Montjuïc</strong> — Gardens, Poble Sec, Fundació Joan Miró" },
-      { time: "14:00", text: "<strong>Lunch</strong> — Restaurant on the hill" },
-      { time: "16:30", text: "<strong>Free time</strong> — Stay on hill or head back down" },
-      { time: "19:00", text: "<strong>Dinner</strong> — TBD" }
-    ]
+      { time: "Heel de dag?", text: "<strong>Girona</strong> — Grote wandeling. Ja dat is alles op deze dag. Neen het is geen 1 april grap. Ik hoop van wel want wth is dit :sob:" }
   },
   {
-    title: "Last Day & Departure",
+    title: "Geen tijd",
     emoji: "👋",
-    date: "July 17",
+    date: "2 april",
     activities: [
-      { time: "09:00", text: "<strong>Breakfast</strong> — Hotel (last one!)" },
-      { time: "10:00", text: "<strong>Free time</strong> — Last-minute souvenirs, revisit a favourite spot" },
-      { time: "12:00", text: "<strong>Lunch</strong> — TBD" },
-      { time: "TBD",   text: "<strong>Check-out & Travel home</strong> — Train / flight back" }
+      { time: "?", text: "<strong>Plaza Cataluña</strong> — Waarom heeft elke naam een accent 😭" },
+      { time: "...", text: "<strong>Ramblas</strong> — Nog een wandeling :]" },
+      { time: "ABC", text: "<strong>Kabelbaan</strong> — Van Montjuich naar de haven" },
+      { time: "Ooit of misschien nooit", text: "<strong>Vrije tijd</strong> — Doe whatever je wilt. Liefst niets illigaal though." },
+      { time: "Ochtend", text: "<strong>Avondmaal</strong> — Haha 1 april het is eigenlijk in de avond." },
+      { time: "Er was is in een ver land in een vergeten tijd...", text: "<strong>Terugrijs</strong> — terug naar herentals"}
     ]
+  },
+  {
+    title: "Het einde",
+    emoji: "👋",
+    date: "3 april",
+    activities: [
+      { time: "?", text: "<strong>Aankomst Herentals</strong> — Het einde van het verhaal"}
+    ]
+  }
   }
 ];
 
