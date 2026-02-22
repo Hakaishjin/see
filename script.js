@@ -86,21 +86,21 @@ const days = [
 //    type: "hotel" | "activity" | "transport"
 const mapPins = [
   { lat: 41.3851, lng: 2.1734, type: "hotel",      label: "Hotel (TBD)", desc: "Your hotel — update address here" },
-  { lat: 41.4033, lng: 2.1741, type: "activity",   label: "Sagrada Família", desc: "Iconic basilica by Gaudí" },
-  { lat: 41.3851, lng: 2.1734, type: "activity",   label: "Park Güell",       desc: "Monumental zone & gardens" },
-  { lat: 41.3851, lng: 2.1734, type: "activity",   label: "Gothic Quarter",   desc: "Cathedral & winding streets" },
-  { lat: 41.3851, lng: 2.1734, type: "activity",   label: "La Boqueria",      desc: "Famous food market" },
-  { lat: 41.3851, lng: 2.1734, type: "activity",   label: "Barceloneta",      desc: "Main city beach" },
-  { lat: 41.3851, lng: 2.1734, type: "activity",   label: "Montjuïc",         desc: "Hill with gardens & museums" },
-  { lat: 41.3851, lng: 2.1734, type: "transport",  label: "Barcelona Sants",  desc: "Main train station" }
+  { lat: 41.4033, lng: 2.1741, type: "Sagrada Familia",   label: "Sagrada Família", desc: "Beschrijving komt hier" },
+  { lat: 41.3851, lng: 2.1734, type: "Iets",   label: "Park Güell",       desc: "Park" },
+  { lat: 41.3851, lng: 2.1734, type: "Iets",   label: "Gothic Quarter",   desc: "Kerk" },
+  { lat: 41.3851, lng: 2.1734, type: "Iets",   label: "AUB WERK",      desc: "Famous." },
+  { lat: 41.3851, lng: 2.1734, type: "Iets",   label: "Barcelina",      desc: "Lol" },
+  { lat: 41.3851, lng: 2.1734, type: "Iets",   label: "Montjuïc",         desc: "Museum" },
+  { lat: 41.3851, lng: 2.1734, type: "Iets",  label: "Het werkt niet",  desc: "trein station" }
 ];
 
 // ─── 3. CREDITS / CREW ──────────────────────────────────────
 // ✏️ EDIT: Add your real names, roles, and emojis!
 const crew = [
-  { name: "Person 1",  emoji: "🌟", role: "Trip Leader",     bio: "Organised the itinerary & logistics" },
-  { name: "Person 2",  emoji: "🎨", role: "Design & Code",   bio: "Built the website & chose the vibe" },
-  { name: "Person 3",  emoji: "📍", role: "Maps & Research", bio: "Found the best spots & transport" }
+  { name: "Ruben",  emoji: "🌟", role: "Web design lead",     bio: "Eigenlijk alles dat je hier ziet is van mij" },
+  { name: "Axel",  emoji: "🎨", role: "Morale support",   bio: "Idk" },
+  { name: "Lowie",  emoji: "📍", role: "Lowie zijn", bio: "Heeft alle frietjes opgegeten" }
 ];
 
 
