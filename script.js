@@ -75,7 +75,7 @@ const days = [
       { time: "...", text: "<strong>Ramblas</strong> — Nog een wandeling :]" },
       { time: "ABC", text: "<strong>Kabelbaan</strong> — Van Montjuich naar de haven" },
       { time: "Ooit of misschien nooit", text: "<strong>Vrije tijd</strong> — Doe whatever je wilt. Liefst niets illigaal though." },
-      { time: "Ochtend", text: "<strong>Avondmaal</strong> — Haha 1 april het is eigenlijk in de avond." },
+      { time: "Ochtend", text: "<strong>Avondmaal</strong> — " },
       { time: "Er was is in een ver land in een vergeten tijd...", text: "<strong>Terugrijs</strong> — terug naar herentals"}
     ]
   }
