@@ -34,7 +34,7 @@ const days = [
     activities: [
       { time: "Tijd niet bekend", text: "<strong>Aankomst in hotel?</strong> — Hotel??" },
       { time: "NVT", text: "<strong>Hospital San Pau</strong> — " },
-      { time: "NVT", text: "<strong>Street art tour</strong> — Neighbourhood of Gràcia" },
+      { time: "NVT", text: "<strong>Street art tour</strong> - Kunst" },
       { time: "avond", text: "<strong>Diner</strong> — Tapas eten (restaurant Plâza Espagña" }
     ]
   },
@@ -43,7 +43,7 @@ const days = [
     emoji: "🏰",
     date: "30 maart",
     activities: [
-      { time: "Voormiddag", text: "<strong>Sagrada Familia</strong> — Café in the Gothic Quarter" },
+      { time: "Voormiddag", text: "<strong>Sagrada Familia</strong> — Ik denk dat dit een kerk is" },
       { time: "Voormiddag", text: "<strong>Wandeling</strong> — Cassa Batló en Casa Mila" },
       { time: "Namidag", text: "<strong>Park Guëll</strong> — " }
     ]
