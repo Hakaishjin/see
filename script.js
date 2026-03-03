@@ -35,8 +35,8 @@ const days = [
     emoji: "😭",
     date: "29 maart",
     activities: [
-      { time: "~8:00", text: "<strong>Ontbijt</strong> — :)" },
-      { time: "~10:00", text: "<strong>Hospital de San Pau</strong> — " },
+      { time: "~8:00", text: "<strong>Ontbijt</strong> :)" },
+      { time: "~10:00", text: "<strong>Hospital de San Pau</strong>" },
       { time: "~12:00", text: "<strong>Metro</strong> — Zie 'transport' voor meer info" },
       { time: "~14:00", text: "<strong>Gotische wijk</strong> — Fotozoektocht, van Plaza Cataluña tot Plaza Reial" },
       { time: "~16:00", text: "<strong>Metro</strong> — Naar Plaza Espagña, vrije avondmaal" },
@@ -48,7 +48,7 @@ const days = [
     emoji: "🏰",
     date: "30 maart",
     activities: [
-      { time: "~8:00", text: "<strong>Ontbijt</strong> — :]" },
+      { time: "~8:00", text: "<strong>Ontbijt</strong> :]" },
       { time: "Voormiddag", text: "<strong>Verschillende bezoeken</strong> — 3 groepen volgorde hangt af van de groep:" },
       { time: "", text: "<strong></strong> — La Sagrada Familia binnenin of enkel buitenkant" },
       { time: "", text: "<strong></strong> — Wandeling naar Casa Batlló en casa Mila" },
@@ -66,7 +66,7 @@ const days = [
     emoji: "🏖️",
     date: "31 maart",
     activities: [
-      { time: "~8:00", text: "<strong>Ontbijt</strong> — :>" },
+      { time: "~8:00", text: "<strong>Ontbijt</strong> :>" },
       { time: "~10:00", text: "<strong>Keuze-activiteit</strong> — Camp Nou, Escape game of alternatief programma" },
       { time: "~12:00", text: "<strong>Metro</strong> — Zie 'transport' voor meer info" },
       { time: "~13:00", text: "<strong>Lunch</strong> — metro, lunch, bus 😭" },
@@ -104,7 +104,7 @@ const days = [
   },
  {
     title: "Het einde",
-    emoji: "👋",
+    emoji: "🏠",
     date: "3 april",
     activities: [
       { time: "~13:00", text: "<strong>Aankomst</strong> Aangekomen in herental" },
