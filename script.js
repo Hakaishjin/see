@@ -13,8 +13,8 @@ const days = [
     emoji: "🚌",
     date: "27 maart",
     activities: [
-      { time: "18:30",    text: "<strong>Verzamelen</strong> — aan Campus De Vesten, Herentals, Augustijnenlaan 31" },
-      { time: "19:30",    text: "<strong>Vertrek</strong> — (⏱ ~13 uur) nachtrit naar Pont du Gard, Frankrijk" }
+      { time: "~18:30",    text: "<strong>Verzamelen</strong> — aan Campus De Vesten, Herentals, Augustijnenlaan 31" },
+      { time: "~19:30",    text: "<strong>Vertrek</strong> — (⏱ ~13 uur) nachtrit naar Pont du Gard, Frankrijk" }
     ]
   },
   {
@@ -22,12 +22,12 @@ const days = [
     emoji: "🇫🇷",
     date: "28 maart",
     activities: [
-      { time: "8:00", text: "<strong>Pont du Gard</strong> — Ontbijt (zelf meenemen) en eten op de brug" },
-      { time: "11:30", text: "<strong>Arena van Nîmes</strong> — Bezoek aan een oud amfitheater" },
-      { time: "12:30", text: "<strong>Middagpauze</strong> — Lunchen in Nîmes" },
-      { time: "14:00", text: "<strong>Naar Barcelona</strong> — Dus terug in de bus" },
-      { time: "18:00", text: "<strong>Hotel</strong> — Check-in hotel" },
-      { time: "19:30", text: "<strong>Avondmaal</strong> — Eten in het hotel)" }
+      { time: "~8:00", text: "<strong>Pont du Gard</strong> — Ontbijt (zelf meenemen) en eten op de brug" },
+      { time: "~11:30", text: "<strong>Arena van Nîmes</strong> — Bezoek aan een oud amfitheater" },
+      { time: "~12:30", text: "<strong>Middagpauze</strong> — Lunchen in Nîmes" },
+      { time: "~14:00", text: "<strong>Naar Barcelona</strong> — Dus terug in de bus" },
+      { time: "~18:00", text: "<strong>Hotel</strong> — Check-in hotel" },
+      { time: "~19:30", text: "<strong>Avondmaal</strong> — Eten in het hotel)" }
     ]
   },
   {
@@ -35,12 +35,12 @@ const days = [
     emoji: "😭",
     date: "29 maart",
     activities: [
-      { time: "8:00", text: "<strong>Ontbijt</strong> — :)" },
-      { time: "10:00", text: "<strong>Hospital de San Pau</strong> — " },
-      { time: "12:00", text: "<strong>Metro</strong> — Zie 'transport' voor meer info" },
-      { time: "14:00", text: "<strong>Gotische wijk</strong> — Fotozoektocht, van Plaza Cataluña tot Plaza Reial" },
-      { time: "16:00", text: "<strong>Metro</strong> — Naar Plaza Espagña, vrije avondmaal" },
-      { time: "20:00", text: "<strong>Hotel</strong> — Terug naar het hotel" }
+      { time: "~8:00", text: "<strong>Ontbijt</strong> — :)" },
+      { time: "~10:00", text: "<strong>Hospital de San Pau</strong> — " },
+      { time: "~12:00", text: "<strong>Metro</strong> — Zie 'transport' voor meer info" },
+      { time: "~14:00", text: "<strong>Gotische wijk</strong> — Fotozoektocht, van Plaza Cataluña tot Plaza Reial" },
+      { time: "~16:00", text: "<strong>Metro</strong> — Naar Plaza Espagña, vrije avondmaal" },
+      { time: "~20:00", text: "<strong>Hotel</strong> — Terug naar het hotel" }
     ]
   },
   {
@@ -48,17 +48,17 @@ const days = [
     emoji: "🏰",
     date: "30 maart",
     activities: [
-      { time: "8:00", text: "<strong>Ontbijt</strong> — :]" },
+      { time: "~8:00", text: "<strong>Ontbijt</strong> — :]" },
       { time: "Voormiddag", text: "<strong>Verschillende bezoeken</strong> — 3 groepen volgorde hangt af van de groep:" },
       { time: "", text: "<strong></strong> — La Sagrada Familia binnenin of enkel buitenkant" },
       { time: "", text: "<strong></strong> — Wandeling naar Casa Batlló en casa Mila" },
       { time: "", text: "<strong></strong> — Wandeling naar Plaza Cataluña" },
-      { time: "12:00", text: "<strong>Vrije tijd</strong> — Doe wat je wilt en eet lunch (of niet idc)" },
-      { time: "15:00", text: "<strong>Metro</strong> — Zie 'transport' voor meer info" },
-      { time: "16:00", text: "<strong>Park Guëll</strong> — Groep 1 (vraag me niet wat groep 2 doet terwijl Groep 1 dit doet)" },
-      { time: "16:30", text: "<strong>Park Guëll</strong> — Groep 2" },
-      { time: "17:30", text: "<strong>Busvervaar richting hotel</strong> — Ctrl+C, Ctrl+V" },
-      { time: "19:30", text: "<strong>Avondmaal</strong> — In het hotel" }
+      { time: "~12:00", text: "<strong>Vrije tijd</strong> — Doe wat je wilt en eet lunch (of niet idc)" },
+      { time: "~15:00", text: "<strong>Metro</strong> — Zie 'transport' voor meer info" },
+      { time: "~16:00", text: "<strong>Park Guëll</strong> — Groep 1 (vraag me niet wat groep 2 doet terwijl Groep 1 dit doet)" },
+      { time: "~16:30", text: "<strong>Park Guëll</strong> — Groep 2" },
+      { time: "~17:30", text: "<strong>Busvervaar richting hotel</strong> — Ctrl+C, Ctrl+V" },
+      { time: "~19:30", text: "<strong>Avondmaal</strong> — In het hotel" }
     ]
   },
   {
@@ -66,14 +66,14 @@ const days = [
     emoji: "🏖️",
     date: "31 maart",
     activities: [
-      { time: "8:00", text: "<strong>Ontbijt</strong> — :>" },
-      { time: "10:00", text: "<strong>Keuze-activiteit</strong> — Camp Nou, Escape game of alternatief programma" },
-      { time: "12:00", text: "<strong>Metro</strong> — Zie 'transport' voor meer info" },
-      { time: "13:00", text: "<strong>Lunch</strong> — metro, lunch, bus 😭" },
-      { time: "14:30", text: "<strong>Bus</strong> — 14.30u - bus pikt groep aan Passeig Joseph Carner, Bustransfer naar Codorniu" },
-      { time: "15:45", text: "<strong>Codorníu</strong> — " },
-      { time: "17:00", text: "<strong>Hotel</strong> — Terug naar het hotel" },
-      { time: "19:30", text: "<strong>Avondmaal</strong> — Eten" }
+      { time: "~8:00", text: "<strong>Ontbijt</strong> — :>" },
+      { time: "~10:00", text: "<strong>Keuze-activiteit</strong> — Camp Nou, Escape game of alternatief programma" },
+      { time: "~12:00", text: "<strong>Metro</strong> — Zie 'transport' voor meer info" },
+      { time: "~13:00", text: "<strong>Lunch</strong> — metro, lunch, bus 😭" },
+      { time: "~14:30", text: "<strong>Bus</strong> — 14.30u - bus pikt groep aan Passeig Joseph Carner, Bustransfer naar Codorniu" },
+      { time: "~15:45", text: "<strong>Codorníu</strong> — " },
+      { time: "~17:00", text: "<strong>Hotel</strong> — Terug naar het hotel" },
+      { time: "~19:30", text: "<strong>Avondmaal</strong> — Eten" }
     ]
   },
   {
@@ -81,23 +81,35 @@ const days = [
     emoji: "🐸",
     date: "1 april",
     activities: [
-      { time: "8:30", text: "<strong>Vertrek naar Girona</strong> — Middagpauze in de buurt van Plaza de la Independencia" },
-      { time: "14:00", text: "<strong>Wandeling</strong> — Langs stadsomwalling en joodse wijk" },
-      { time: "16:30", text: "<strong>Hotel</strong> — Terug naar het hotel" },
+      { time: "~8:30", text: "<strong>Vertrek naar Girona</strong> — Middagpauze in de buurt van Plaza de la Independencia" },
+      { time: "~14:00", text: "<strong>Wandeling</strong> — Langs stadsomwalling en joodse wijk" },
+      { time: "~16:30", text: "<strong>Hotel</strong> — Terug naar het hotel" },
+      { time: "~19:30", text: "<strong>Avondmaal</strong> — Eten" },
      ]
   },
   {
-    title: "Geen tijd",
+    title: "Terug naar Herentals",
     emoji: "👋",
     date: "2 april",
     activities: [
-      { time: "?", text: "<strong>Plaza Cataluña</strong> — Waarom heeft elke naam een accent 😭" },
-      { time: "...", text: "<strong>Ramblas</strong> — Nog een wandeling :]" },
-      { time: "ABC", text: "<strong>Kabelbaan</strong> — Van Montjuich naar de haven" },
-      { time: "Ooit of misschien nooit", text: "<strong>Vrije tijd</strong> — Doe whatever je wilt. Liefst niets illigaal though." },
-      { time: "Ochtend", text: "<strong>Avondmaal</strong> — " },
-      { time: "Er was is in een ver land in een vergeten tijd...", text: "<strong>Terugrijs</strong> — terug naar herentals"}
-    ]
+      { time: "~8:45", text: "<strong>Ontbijt</strong> =)" },
+      { time: "", text: "<strong></strong> — Check-out bage verzamelen in bagageruimte" },
+      { time: "~10:00", text: "<strong>Trein</strong> — Zie transport" },
+      { time: "~13:00", text: "<strong>Lunch</strong> — Vrije tijd" },
+      { time: "~16:30", text: "<strong>Trein</strong> — Door de klant geregeld" },
+      { time: "~19:30", text: "<strong>Avondmaal</strong> — In het hotel" },
+      { time: "20:00", text: "<strong>Voorbereiding vertrek</strong> — Verzamelen en inladen bus"},
+      { time: "~20:30", text: "<strong>Vertrek</strong> — Terug naar herentals" },
+,    ]
+  },
+ {
+    title: "Het einde",
+    emoji: "👋",
+    date: "3 april",
+    activities: [
+      { time: "~13:00", text: "<strong>Aankomst</strong> Aangekomen in herental" },
+   
+,    ]
   }
 ];
 
