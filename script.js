@@ -44,7 +44,7 @@ const days = [
     ]
   },
   {
-    title: "Gaudí-dag",
+    title: "geen titel",
     emoji: "🏰",
     date: "30 maart",
     activities: [
