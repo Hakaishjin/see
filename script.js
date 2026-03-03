@@ -24,8 +24,8 @@ const days = [
     activities: [
       { time: "8:00", text: "<strong>Pont du Gard</strong> — Ontbijt (zelf meenemen) en eten op de brug" },
       { time: "11:30", text: "<strong>Arena van Nîmes</strong> — Bezoek aan een oud amfitheater" },
-      { time: "12:30", text: "<strong>Middagpauze</strong> — Lunchen in Nîmes)" },
-      { time: "14:00", text: "<strong>Naar Barcelona</strong> — Dus terug in de bus)" },
+      { time: "12:30", text: "<strong>Middagpauze</strong> — Lunchen in Nîmes" },
+      { time: "14:00", text: "<strong>Naar Barcelona</strong> — Dus terug in de bus" },
       { time: "18:00", text: "<strong>Hotel</strong> — Check-in hotel" },
       { time: "19:30", text: "<strong>Avondmaal</strong> — Eten in het hotel)" }
     ]
