@@ -13,7 +13,8 @@ const days = [
     emoji: "🚌",
     date: "27 maart",
     activities: [
-      { time: "~19:30",    text: "<strong>Vertrek</strong> — (⏱ ~13 uur) busrit naar Pont du Gard, Frankrijk" }
+      { time: "18:30",    text: "<strong>Verzamelen</strong> — aan Campus De Vesten, Herentals, Augustijnenlaan 31" },
+      { time: "19:30",    text: "<strong>Vertrek</strong> — (⏱ ~13 uur) nachtrit naar Pont du Gard, Frankrijk" }
     ]
   },
   {
@@ -21,10 +22,12 @@ const days = [
     emoji: "🇫🇷",
     date: "28 maart",
     activities: [
-      { time: "'s morgens", text: "<strong>Pont du Gard</strong> — Kijken naar een brug en ontbijten" },
-      { time: "'s middags", text: "<strong>Arena van Nîmes</strong> — Amfitheater bekijken + Lunch" },
-      { time: "Tijd niet bekend", text: "<strong>Busrit</strong> — Naar Santa Susanna (bijna in Barcelona)" },
-      { time: "Avond", text: "<strong>Avondwandeling</strong> — Wandeling in de avond" }
+      { time: "8:00", text: "<strong>Pont du Gard</strong> — Ontbijt (zelf meenemen) en eten op de brug" },
+      { time: "11:30", text: "<strong>Arena van Nîmes</strong> — Bezoek aan een oud amfitheater" },
+      { time: "12:30", text: "<strong>Middagpauze</strong> — Lunchen in Nîmes)" },
+      { time: "14:00", text: "<strong>Naar Barcelona</strong> — Dus terug in de bus)" },
+      { time: "18:00", text: "<strong>Hotel</strong> — Check-in hotel" }
+      { time: "19:30", text: "<strong>Avondmaal</strong> — Eten in het hotel)" }
     ]
   },
   {
@@ -32,10 +35,12 @@ const days = [
     emoji: "😭",
     date: "29 maart",
     activities: [
-      { time: "Tijd niet bekend", text: "<strong>Aankomst in hotel?</strong> — Hotel??" },
-      { time: "NVT", text: "<strong>Hospital San Pau</strong> — " },
-      { time: "NVT", text: "<strong>Street art tour</strong> - Kunst" },
-      { time: "avond", text: "<strong>Diner</strong> — Tapas eten (restaurant Plâza Espagña" }
+      { time: "8:00", text: "<strong>Ontbijt</strong> — :)" },
+      { time: "10:00", text: "<strong>Hospital de San Pau</strong> — " },
+      { time: "12:00", text: "<strong>Metro</strong> — Zie 'transport' voor meer info" },
+      { time: "14:00", text: "<strong>Gotische wijk</strong> — Fotozoektocht, van Plaza Cataluña tot Plaza Reial" },
+      { time: "16:00", text: "<strong>Metro</strong> — Naar Plaza Espagña, vrije avondmaal" },
+      { time: "20:00", text: "<strong>Hotel</strong> — Terug naar het hotel" }
     ]
   },
   {
@@ -43,9 +48,17 @@ const days = [
     emoji: "🏰",
     date: "30 maart",
     activities: [
-      { time: "Voormiddag", text: "<strong>Sagrada Familia</strong> — Ik denk dat dit een kerk is" },
-      { time: "Voormiddag", text: "<strong>Wandeling</strong> — Cassa Batló en Casa Mila" },
-      { time: "Namidag", text: "<strong>Park Guëll</strong> — " }
+      { time: "8:00", text: "<strong>Ontbijt</strong> — :]" },
+      { time: "Voormiddag", text: "<strong>Verschillende bezoeken</strong> — 3 groepen volgorde hangt af van de groep:" },
+      { time: "", text: "<strong></strong> — La Sagrada Familia binnenin of enkel buitenkant" },
+      { time: "", text: "<strong></strong> — Wandeling naar Casa Batlló en casa Mila" },
+      { time: "", text: "<strong></strong> — Wandeling naar Plaza Cataluña" },
+      { time: "12:00", text: "<strong>Vrije tijd</strong> — Doe wat je wilt en eet lunch (of niet idc)" },
+      { time: "15:00", text: "<strong>Metro</strong> — Zie 'transport' voor meer info" },
+      { time: "16:00", text: "<strong>Park Guëll</strong> — Groep 1 (vraag me niet wat groep 2 doet terwijl Groep 1 dit doet)" },
+      { time: "16:30", text: "<strong>Park Guëll</strong> — Groep 2" },
+      { time: "17:30", text: "<strong>Busvervaar richting hotel</strong> — Ctrl+C, Ctrl+V" },
+      { time: "19:30", text: "<strong>Avondmaal</strong> — In het hotel" }
     ]
   },
   {
@@ -53,9 +66,14 @@ const days = [
     emoji: "🏖️",
     date: "31 maart",
     activities: [
-      { time: "Voormiddag", text: "<strong>Keuze-activiteit</strong> — Camp Nou, Escape game of alternatief programma" },
-      { time: "Namiddag", text: "<strong>Codorníu</strong> —" },
-      { time: "Avond", text: "<strong>Quiz</strong> — Ja ik weet het: klinkt saai." }
+      { time: "8:00", text: "<strong>Ontbijt</strong> — :>" },
+      { time: "10:00", text: "<strong>Keuze-activiteit</strong> — Camp Nou, Escape game of alternatief programma" },
+      { time: "12:00", text: "<strong>Metro</strong> — Zie 'transport' voor meer info" },
+      { time: "13:00", text: "<strong>Lunch</strong> — metro, lunch, bus 😭" },
+      { time: "14:30", text: "<strong>Bus</strong> — 14.30u - bus pikt groep aan Passeig Joseph Carner, Bustransfer naar Codorniu" },
+      { time: "15:45", text: "<strong>Codorníu</strong> — " },
+      { time: "17:00", text: "<strong>Hotel</strong> — Terug naar het hotel" },
+      { time: "19:30", text: "<strong>Avondmaal</strong> — Eten" }
     ]
   },
   {
